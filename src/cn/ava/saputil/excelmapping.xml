@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModelMapping>
+  <ObjectArea Name="TableArea"  RowCount="1">
+    <Conditions>
+      <Condition Column="F1" Operate="Equal" Value="表名"/>
+    </Conditions>
+    <Propertys>
+      <Property Name="Name" Column="F2"/>
+      <Property Name="Description" Column="F5"/>
+      <Property Name="Type" Column="F10"/>
+      <Property Name="State" Column="F12"/>
+      <Property Name="PropertyName" Column="F7"/>
+    </Propertys>
+    <ValueMaps>
+      <ValueMap Source="是" Target="Yes"/>
+      <ValueMap Source="否" Target="No"/>
+      <ValueMap Source="主数据" Target="bott_MasterData"/>
+      <ValueMap Source="主数据行" Target="bott_MasterDataLines"/>
+      <ValueMap Source="单据" Target="bott_Document"/>
+      <ValueMap Source="单据行" Target="bott_DocumentLines"/>
+      <ValueMap Source="简单对象" Target="bott_SimpleBusinessObject"/>
+      <ValueMap Source="简单对象行" Target="bott_SimpleBusinessObjectLines"/>
+      <ValueMap Source="无类型" Target="bott_NoObject"/>
+      <ValueMap Source="自定义" Target="bots_User"/>
+      <ValueMap Source="系统" Target="bots_System"/>
+      <ValueMap Source="仅对象模型" Target="bots_BoModelOnly"/>
+    </ValueMaps>
+  </ObjectArea>
+  <ObjectArea Name="FieldTitleArea" RowCount="2">
+    <Conditions>
+      <Condition Column="F1" Operate="Equal" Value="字段名称"/>
+    </Conditions>
+    <Propertys>
+    </Propertys>
+    <ValueMaps>
+    </ValueMaps>
+  </ObjectArea>
+  <ObjectArea Name="FieldArea" RowCount="1">
+    <Conditions>
+      <Condition Column="F1" Operate="NotEqual" Value=""/>
+      <Condition Column="F7" Operate="NotEqual" Value=""/>
+    </Conditions>
+    <Propertys>
+      <Property Name="Name" Column="F1"/>
+      <Property Name="Description" Column="F2"/>
+      <Property Name="DataType" Column="F5"/>
+      <Property Name="SubType" Column="F6"/>
+      <Property Name="EditSize" Column="F7"/>
+      <Property Name="DefaultValue" Column="F8"/>
+      <Property Name="LinkTable" Column="F11"/>
+      <Property Name="IsSystem" Column="F4"/>
+      <Property Name="PropertyName" Column="F3"/>
+      <Property Name="FixedDataType" Column="F9"/>
+    </Propertys>
+    <ValueMaps>
+      <ValueMap Source="是" Target="Yes"/>
+      <ValueMap Source="否" Target="No"/>
+      <ValueMap Source="字母数字" Target="db_Alpha"/>
+      <ValueMap Source="数字" Target="db_Numeric"/>
+      <ValueMap Source="日期/时间" Target="db_Date"/>
+      <ValueMap Source="单位与总计" Target="db_Float"/>
+      <ValueMap Source="常规" Target="db_Memo"/>
+      <ValueMap Source="定期" Target="st_None"/>
+      <ValueMap Source="地址" Target="st_Address"/>
+      <ValueMap Source="电话" Target="st_Phone"/>
+      <ValueMap Source="文本" Target="st_None"/>
+      <ValueMap Source="日期" Target="st_None"/>
+      <ValueMap Source="小时" Target="st_Time"/>
+      <ValueMap Source="汇率" Target="st_Rate"/>
+      <ValueMap Source="金额" Target="st_Sum"/>
+      <ValueMap Source="价格" Target="st_Price"/>
+      <ValueMap Source="数量" Target="st_Quantity"/>
+      <ValueMap Source="百分比" Target="st_Percentage"/>
+      <ValueMap Source="度量" Target="st_Measurement"/>
+      <ValueMap Source="链接" Target="st_Link"/>
+      <ValueMap Source="图像" Target="st_Image"/>
+      <ValueMap Source="邮件" Target="st_Email"/>
+      <ValueMap Source="网址" Target="st_Website"/>
+    </ValueMaps>
+  </ObjectArea>
+  <ObjectArea Name="ValidValueArea" RowCount="1">
+    <Conditions>
+      <Condition Column="F1" Operate="Equal" Value=""/>
+      <Condition Column="F9" Operate="NotEqual" Value=""/>
+      <Condition Column="F10" Operate="NotEqual" Value=""/>
+    </Conditions>
+    <Propertys>
+      <Property Name="Value" Column="F9"/>
+      <Property Name="Description" Column="F10"/>
+    </Propertys>
+    <ValueMaps>
+    </ValueMaps>
+  </ObjectArea>
+  <ObjectArea Name="BusinessObjectArea" RowCount="4">
+    <Conditions>
+      <Condition Column="F1" Operate="Equal" Value="对象名"/>
+    </Conditions>
+    <Propertys>
+      <Property Name="Code" Column="F2" Offset="0"/>
+      <Property Name="Name" Column="F4" Offset="0"/>
+      <Property Name="PropertyName" Column="F6" Offset="0"/>
+      <Property Name="ObjectType" Column="F2" Offset="1"/>
+      <Property Name="CanDelete" Column="F4" Offset="1"/>
+      <Property Name="CanCancel" Column="F6" Offset="1"/>
+      <Property Name="CanClose" Column="F2" Offset="2"/>
+      <Property Name="NotSupportB1" Column="F4" Offset="2"/>
+      <Property Name="OnlyForBoModel" Column="F6" Offset="2"/>
+      <Property Name="TableName" Column="F2" Offset="3"/>
+      <Property Name="LogTableName" Column="F5" Offset="3"/>
+    </Propertys>
+    <ValueMaps>
+      <ValueMap Source="是" Target="Yes"/>
+      <ValueMap Source="否" Target="No"/>
+      <ValueMap Source="主数据" Target="boud_MasterData"/>
+      <ValueMap Source="单据" Target="boud_Document"/>
+      <ValueMap Source="简单对象" Target="boud_SimpleBusinessObject"/>
+    </ValueMaps>
+  </ObjectArea>
+  <ObjectArea Name="BusinessObjectChildTableArea" RowCount="1">
+    <Conditions>
+      <Condition Column="F1" Operate="Equal" Value="子表"/>
+    </Conditions>
+    <Propertys>
+      <Property Name="TableName" Column="F2" Offset="0"/>
+      <Property Name="LogTableName" Column="F4" Offset="0"/>
+    </Propertys>
+    <ValueMaps>
+    </ValueMaps>
+  </ObjectArea>
+</ModelMapping>

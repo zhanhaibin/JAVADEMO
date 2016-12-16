@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Program Files/sap/SAP Business One DI API/JCO/LIB/sboapi.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files/sap/SAP Business One DI API/JCO/LIB/sbowrapper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/cn/ava/publics-util/1.0.22/publics-util-1.0.22.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar" sourcepath="C:/Users/ZHANHB/.m2/repository/org/apache/poi/poi/3.9/poi-3.9-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ZHANHB/.m2/repository/jaxen/jaxen/1.1-beta-8/jaxen-1.1-beta-8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
